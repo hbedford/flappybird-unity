@@ -13,8 +13,16 @@ public class ObstacleController : MonoBehaviour
     {
         transform.Translate(Vector3.up * Random.Range(-variationPositionY, variationPositionY));
     }
-    void Update()
+    private void Update()
     {
         transform.Translate(Vector3.left*speed* Time.deltaTime);   
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        Destroy(gameObject);
+      
     }
 }
