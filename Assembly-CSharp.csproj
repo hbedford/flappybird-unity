@@ -60,6 +60,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\LoopController.cs" />
     <Compile Include="Assets\Scripts\GenerateObstacleController.cs" />
     <Compile Include="Assets\Scripts\Plane.cs" />
     <Compile Include="Assets\Scripts\ObstacleController.cs" />
@@ -967,10 +968,6 @@
       <Project>{544058B4-7478-35FB-0EE3-20339C6F27BA}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.Advertisements.csproj">
-      <Project>{98B04251-E9AC-2D73-2926-1F689EB55979}</Project>
-      <Name>UnityEngine.Advertisements</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{A639D262-698A-39A4-E3F2-5245220F0D11}</Project>
       <Name>UnityEngine.UI</Name>
@@ -986,6 +983,10 @@
     <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
       <Project>{D1AAC2FD-77AC-AD2C-2DAF-3931B734F41B}</Project>
       <Name>Unity.2D.Sprite.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.Advertisements.csproj">
+      <Project>{98B04251-E9AC-2D73-2926-1F689EB55979}</Project>
+      <Name>UnityEngine.Advertisements</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
       <Project>{6057D801-BA4B-159B-ABF5-AD86D554F6A9}</Project>

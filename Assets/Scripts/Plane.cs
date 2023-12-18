@@ -22,6 +22,7 @@ public class Plane : MonoBehaviour
 
     private void Push()
     {
+        physic.velocity = Vector2.zero;
         physic.AddForce(Vector2.up*force, ForceMode2D.Impulse);
     }
 }

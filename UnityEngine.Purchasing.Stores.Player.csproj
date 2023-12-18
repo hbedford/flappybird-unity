@@ -202,9 +202,9 @@
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\AppleAppStore\FakeAppleConfiguration.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\GooglePlay\AAR\GoogleFinishTransactionService.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\GooglePlay\MetricizedGooglePlayStoreExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\GooglePlay\Interfaces\IGooglePlayStoreExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\GooglePlay\AAR\Interfaces\IGoogleFinishTransactionService.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Util\EnumerableExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\GooglePlay\Interfaces\IGooglePlayStoreExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\ScriptingUnityCallback.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\GooglePlay\GooglePlayStoreExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.purchasing@4.9.3\Runtime\Stores\Android\GooglePlay\AAR\Utils\AndroidJavaObjectWrapper.cs" />

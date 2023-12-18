@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class GenerateObstacle : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private float timeToGenerate = 5;
+    private float currentTime = 0;
+    [SerializeField]
+    private GameObject Obstacle;
 
-    // Update is called once per frame
+    private void Awake()
+    {
+        currentTime = timeToGenerate;
+    }
     void Update()
     {
+        currentTime-= Time.deltaTime;
+        if(currentTime <= 0)
+        {
+            currentTime = timeToGenerate;
+            Generate();
+        }
+    }
+
+    private void Generate()
+    {
+        GameObject.Instantiate(Obstacle, transform.position, Quaternion.identity);
         
     }
 }
