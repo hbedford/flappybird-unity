@@ -62,8 +62,8 @@
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Window\ViewModel\TimelineWindowViewPrefs.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Actions\TimelineActions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Actions\IAction.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\treeview\TrackGui\TimelineTrackGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Actions\IAction.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Window\TimelineWindow_PreviewPlayMode.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\Animation\CurvesProxy.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.7.6\Editor\treeview\Drawers\Layers\MarkersLayer.cs" />
