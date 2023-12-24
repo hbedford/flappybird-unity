@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -10,7 +10,15 @@ public class GameController : MonoBehaviour
     private Plane Plane;
     private int score;
     [SerializeField]
-    private TMP_Text ScoreText;
+    private Text ScoreText;
+    [SerializeField]
+    private Text maxScoreText;
+    private int maxScore;
+    [SerializeField]
+    private Image positionCoin;
+    [SerializeField]
+    private Sprite[] coins;
+
 
     private void Start()
     {
@@ -23,6 +31,7 @@ public class GameController : MonoBehaviour
     {
         Time.timeScale = 0;
         GameOver.SetActive(true);
+        SaveScore();
 
     }
 
@@ -33,6 +42,7 @@ public class GameController : MonoBehaviour
         Plane.Restart();
         DestroyObstacles();
         score = 0;
+        ScoreText.text = score.ToString();
     }
 
     private void DestroyObstacles()
@@ -47,5 +57,38 @@ public class GameController : MonoBehaviour
     {
         score++;
         ScoreText.text = score.ToString();
+    }
+
+    public void SaveScore()
+    {
+        if (score > PlayerPrefs.GetInt("Score")) 
+
+       {
+            PlayerPrefs.SetInt("Score", score);
+        }
+        UpdateInterface();
+    }
+
+    public void UpdateInterface()
+    {
+        maxScore=  PlayerPrefs.GetInt("Score");
+        maxScoreText.text = maxScore.ToString();
+        VerifyCoinColor();
+    }
+
+    private void VerifyCoinColor()
+    {
+        if(score> maxScore - 2)
+        {
+            positionCoin.sprite = coins[0];
+            return;
+        }
+        if(score > maxScore / 2)
+        {
+            positionCoin.sprite = coins[1];
+            return;
+        }
+        positionCoin.sprite = coins[2];
+
     }
 }

@@ -61,9 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\HandController.cs" />
     <Compile Include="Assets\Scripts\LoopController.cs" />
     <Compile Include="Assets\Scripts\GenerateObstacleController.cs" />
     <Compile Include="Assets\Scripts\Plane.cs" />
+    <Compile Include="Assets\Scripts\VariableFloatShared.cs" />
+    <Compile Include="Assets\Scripts\LevelController.cs" />
     <Compile Include="Assets\Scripts\ObstacleController.cs" />
   </ItemGroup>
   <ItemGroup>

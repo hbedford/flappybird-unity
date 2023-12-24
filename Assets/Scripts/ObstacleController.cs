@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObstacleController : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 0.05f;
+    private VariableFloatShared speed;
     [SerializeField]
     private float variationPositionY;
     private Vector3 planePosition;
@@ -19,7 +19,7 @@ public class ObstacleController : MonoBehaviour
     }
     private void Update()
     {
-        transform.Translate(Vector3.left*speed* Time.deltaTime);   
+        transform.Translate(Vector3.left*speed.value* Time.deltaTime);   
         if(transform.position.x < planePosition.x && !addScore)
         {
             addScore = true;

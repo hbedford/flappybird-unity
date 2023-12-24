@@ -370,9 +370,12 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/GameController.cs"
 "Assets/Scripts/GenerateObstacleController.cs"
+"Assets/Scripts/HandController.cs"
+"Assets/Scripts/LevelController.cs"
 "Assets/Scripts/LoopController.cs"
 "Assets/Scripts/ObstacleController.cs"
 "Assets/Scripts/Plane.cs"
+"Assets/Scripts/VariableFloatShared.cs"
 -langversion:9.0
 
 /deterministic

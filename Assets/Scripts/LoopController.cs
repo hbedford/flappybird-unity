@@ -5,7 +5,7 @@ using UnityEngine;
 public class LoopController : MonoBehaviour
 {
     [SerializeField]
-    private float Speed;
+    private VariableFloatShared Speed;
     private Vector3 positionInitial;
     private float sizeOfGround;
 
@@ -17,7 +17,7 @@ public class LoopController : MonoBehaviour
     }
     void Update()
     {
-       float movement = Mathf.Repeat(Speed * Time.time,sizeOfGround);
+       float movement = Mathf.Repeat(Speed.value * Time.time,sizeOfGround);
         transform.position =positionInitial +Vector3.left * movement;
 
 
